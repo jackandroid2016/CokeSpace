@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home"
+    tools:ignore="UnusedNavigation">
+
+    <fixFragment
+        android:id="@+id/navigation_home"
+        android:name="com.cs.home.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fixFragment
+        android:id="@+id/navigation_project"
+        android:name="com.cs.home.ui.project.ProjectFragment"
+        android:label="@string/title_square"
+        tools:layout="@layout/fragment_navigation" />
+
+    <fixFragment
+        android:id="@+id/navigation_navi"
+        android:name="com.cs.home.ui.navi.NavigationFragment"
+        android:label="@string/title_video"
+        tools:layout="@layout/fragment_project" />
+
+    <fixFragment
+        android:id="@+id/navigation_tree"
+        android:name="com.cs.home.ui.tree.TreeFragment"
+        android:label="@string/title_music"
+        tools:layout="@layout/fragment_tree" />
+
+    <fixFragment
+        android:id="@+id/navigation_mine"
+        android:name="com.cs.home.ui.mine.MineFragment"
+        android:label="@string/title_mine"
+        tools:layout="@layout/fragment_mine" />
+
+
+</navigation>

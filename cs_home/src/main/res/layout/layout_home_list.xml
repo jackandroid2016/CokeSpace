@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="feed"
+            type="com.cs.home.model.home.DataFeed" />
+
+        <import type="android.text.Html" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer_white_bg"
+        android:layout_marginTop="5dp"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{feed.picUrl}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{Html.fromHtml(feed.title)}"
+            android:textColor="@color/text_color_1"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toEndOf="@id/iv_pic"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="我是标题我是标题我是标题我是标题我是标题我是标题我是标题" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{feed.description}"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_color_2"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/iv_pic"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:text="我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文我是正文" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="作者：未知"
+            android:textColor="@color/text_color_3"
+            app:layout_constraintStart_toEndOf="@id/iv_pic"
+            app:layout_constraintTop_toBottomOf="@id/desc"
+            tools:text="作者：小四" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@{feed.ctime}"
+            android:textColor="@color/text_color_3"
+            app:layout_constraintBaseline_toBaselineOf="@id/author"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/desc"
+            tools:text="2天前" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
