@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.win.ft_home.binding;
+package com.cs.home.binding;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +22,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.databinding.BindingAdapter;
-import com.win.lib_image_loader.app.ImageLoaderManager;
+import com.cs.lib_image_loader.app.ImageLoaderManager;
 
 /**
  * Create by KunMinX at 19/9/18

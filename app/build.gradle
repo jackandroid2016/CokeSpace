@@ -82,6 +82,6 @@ dependencies {
     implementation project(":lib_common_ui")
     implementation project(":lib_image_loader")
 
-    implementation project(":ft_home")
+    implementation project(":cs_home")
 
 }

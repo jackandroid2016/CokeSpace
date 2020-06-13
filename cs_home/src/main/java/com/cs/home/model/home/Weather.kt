@@ -1,4 +1,4 @@
-package com.win.ft_home.model.home
+package com.cs.home.model.home
 
 /**
  * {

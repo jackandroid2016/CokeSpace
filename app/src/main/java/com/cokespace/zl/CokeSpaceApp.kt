@@ -3,7 +3,7 @@ package com.cokespace.zl
 import android.app.Application
 import com.alibaba.android.arouter.launcher.ARouter
 import com.tencent.mmkv.MMKV
-import com.win.lib_base.utils.BaseContext
+import com.cs.lib_base.utils.BaseContext
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

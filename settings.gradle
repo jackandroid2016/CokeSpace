@@ -1,4 +1,4 @@
-include ':ft_home'
+include ':cs_home'
 include ':lib_webview'
 include ':lib_net'
 include ':lib_image_loader'

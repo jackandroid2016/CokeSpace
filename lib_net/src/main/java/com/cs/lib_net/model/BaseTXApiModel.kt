@@ -1,4 +1,4 @@
-package com.win.lib_net.model
+package com.cs.lib_net.model
 
 /**
  * Created by luyao

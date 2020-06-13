@@ -1,9 +1,9 @@
 package com.cokespace.zl
 
-import com.win.lib_net.net.RetrofitClient
+import com.cs.lib_net.net.RetrofitClient
 import org.koin.dsl.module
-import com.win.ft_home.di.treeRepoModule
-import com.win.ft_home.di.treeViewModelModule
+import com.cs.home.di.treeRepoModule
+import com.cs.home.di.treeViewModelModule
 
 /**
  * Create by liwen on 2020/5/25
